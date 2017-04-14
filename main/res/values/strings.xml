@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WrestleKingdom</string>
+    <string name="button">Button</string>
+    <string name="start_game">Start Game</string>
+    <string name="load_players">Load Players</string>
+    <string name="exit_exit_exit">EXIT EXIT EXIT</string>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="680dp"
+                        android:layout_height="384dp"
+                        tools:ignore="UselessParent">
+
+                        <VideoView
+                            android:layout_width="240dp"
+                            android:layout_height="190dp"
+                            android:id="@+id/battlevid"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <Button
+                            android:text="Button"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignStart="@+id/move1"
+                            android:layout_marginBottom="8dp"
+                            android:id="@+id/m3"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/gaugebar"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText"
+                            android:layout_below="@+id/battlevid"
+                            android:layout_alignEnd="@+id/move2"
+                            android:layout_marginEnd="56dp"
+                            android:layout_marginTop="8dp" />
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="190dp"
+                            app:srcCompat="@mipmap/omega"
+                            android:layout_marginStart="18dp"
+                            android:id="@+id/imageView"
+                            tools:ignore="ContentDescription"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:clickable="true"
+                            android:onClick="gaugeHack" />
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="190dp"
+                            app:srcCompat="@mipmap/www"
+                            android:id="@+id/imageView2"
+                            android:layout_marginStart="24dp"
+                            android:contentDescription=""
+                            tools:ignore="ContentDescription"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/battlevid" />
+
+                        <Button
+                            android:text="Dropkick Splash"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/move1"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText"
+                            android:layout_above="@+id/m3"
+                            android:layout_toEndOf="@+id/imageView"
+                            android:onClick="doMoveA" />
+
+                        <android.support.v4.widget.NestedScrollView
+                            android:layout_width="220dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="14dp"
+                            android:layout_below="@+id/gaugebar"
+                            android:layout_alignEnd="@+id/move2"
+                            android:layout_marginTop="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:text="TextView"
+                                    android:layout_width="220dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/commentary1"
+                                    android:textSize="15sp"
+                                    android:textColor="@android:color/black"
+                                    tools:ignore="HardcodedText,ObsoleteLayoutParam"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_below="@+id/gaugebar"
+                                    android:layout_centerHorizontal="true" />
+                            </LinearLayout>
+                        </android.support.v4.widget.NestedScrollView>
+
+                        <Button
+                            android:text="Button"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/move2"
+                            tools:ignore="HardcodedText"
+                            android:layout_alignTop="@+id/move1"
+                            android:layout_toEndOf="@+id/move1"
+                            android:layout_marginStart="14dp" />
+
+                        <Button
+                            android:text="Finisher"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/finisher"
+                            tools:ignore="HardcodedText"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignStart="@+id/signature"
+                            android:onClick="doFinish" />
+
+                        <Button
+                            android:text="Button"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/m4"
+                            tools:ignore="HardcodedText"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toStartOf="@+id/imageView2" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="170dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/hplabel2"
+                            android:textSize="21sp"
+                            android:textColor="@android:color/black"
+                            tools:ignore="HardcodedText"
+                            android:layout_above="@+id/imageView2"
+                            android:layout_alignStart="@+id/imageView2" />
+
+                        <Button
+                            android:text="Continue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/con"
+                            tools:ignore="HardcodedText"
+                            android:layout_marginEnd="32dp"
+                            android:layout_above="@+id/hplabel2"
+                            android:layout_alignEnd="@+id/hplabel2"
+                            android:layout_marginBottom="7dp" />
+
+                        <Button
+                            android:text="Tombstone Piledriver"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/signature"
+                            tools:ignore="HardcodedText"
+                            android:layout_above="@+id/finisher"
+                            android:layout_alignStart="@+id/imageView" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="170dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/hplabel1"
+                            android:textSize="21sp"
+                            android:textColor="@android:color/black"
+                            tools:ignore="HardcodedText"
+                            android:layout_marginStart="6dp"
+                            android:layout_above="@+id/signature"
+                            android:layout_alignStart="@+id/signature" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
